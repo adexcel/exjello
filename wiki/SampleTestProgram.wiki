@@ -18,8 +18,13 @@ import javax.mail.Store;
 import org.exjello.mail.ExchangeConstants;
 import org.exjello.mail.ExchangeStore;
 
-/* Monitors given mailbox for new mail */
-
+/**
+ * You can use this test program in console mode with parameters or with
+ * inner static fields
+ * 
+ * @param argv
+ * @throws Exception
+ */
 public class TestExJello {
 
 	/*
@@ -33,13 +38,6 @@ public class TestExJello {
 
 	public static final String FORMAT_ISO_8601 = "yyyy-MM-dd'T'HH:mm:ss'Z'";
 
-	/**
-	 * You can use this test program in console mode with parameters or with
-	 * inner static fields
-	 * 
-	 * @param argv
-	 * @throws Exception
-	 */
 	public static void main(String argv[]) throws Exception {
 		String lastCheck = "";
 
@@ -143,5 +141,4 @@ public class TestExJello {
 
 	}
 }
-
 }}}
