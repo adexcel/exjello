@@ -71,8 +71,6 @@ public class TestExJello {
 
 		System.out.println(argv);
 
-		// http://blogs.msdn.com/b/andrewdelin/archive/2005/05/11/416312.aspx
-
 		if (argv.length != 4) {
 			System.out.println("Usage: monitor <host> <user> <password> <mbox>");
 			// System.exit(1);
@@ -87,6 +85,12 @@ public class TestExJello {
 			 * Use UNFILTERED_PROPERTY if you whant Readed and Unreaded emails
 			 */
 			props.setProperty(ExchangeConstants.UNFILTERED_PROPERTY, String.valueOf(true));
+
+			/*
+			 * You can use other filter implemented on exJello, they are based
+			 * on:
+			 * http://blogs.msdn.com/b/andrewdelin/archive/2005/05/11/416312.aspx
+			 */
 
 			/*
 			 * Use FILTER_FROM_PROPERTY to filter email only form certain
@@ -138,4 +142,5 @@ public class TestExJello {
 
 	}
 }
+
 }}}
