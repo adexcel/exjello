@@ -43,7 +43,7 @@ public class TestExJello {
 		String lastCheck = "";
 
 		/*
-		 * A sample for to if you whant to test FILTER_LAST_CHECK exJello filter
+		 * A sample "for": if you whant to test FILTER_LAST_CHECK exJello filter
 		 */
 		for (int i = 0; i < 10; i++) {
 			System.out.println(lastCheck);
@@ -142,5 +142,4 @@ public class TestExJello {
 
 	}
 }
-
 }}}
